@@ -1,0 +1,26 @@
+GET http://localhost:5000/subscribers
+
+### get subscriber by ID
+GET http://localhost:5000/subscribers/6107b469de94ac029c6fefb9
+
+### add subscriber 
+POST http://localhost:5000/subscribers
+Content-Type: application/json
+
+{
+    "name": "amazing person",
+    "subscribedToChannel": "that channel"
+}
+
+
+### delete subscriber 
+DELETE http://localhost:5000/subscribers/6107b469de94ac029c6fefb9
+
+
+### update 
+PATCH http://localhost:5000/subscribers/6107b469de94ac029c6fefb9
+Content-Type: application/json
+
+{
+    "name": "new name"
+}
